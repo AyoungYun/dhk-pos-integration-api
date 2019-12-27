@@ -34,9 +34,9 @@ public class CreateOrder {
     String visitTime; // 방문(픽업) 예약 시간 - YYYYMMDDHH24MISS (ex. 20171205134850)
     /* 배달 주문 추가 정보 */
     String landAddr; // 지번 주소 (ex. 서울특별시 금천구 가산동 60-25 에이스하이엔드타워6차)
-    String landAddrDetail; // 지번 주소 상세 (ex. 604호)
+    String landAddrDetail; // 지번 상세 주소 (ex. 604호)
     String loadAddr; // 도로명 주소 (ex. 서울특별시 금천구 벚꽃로 234(가산동))
-    String loadAddrDetail; // 도로명 주소 상세 (ex. 604호)
+    String loadAddrDetail; // 도로명 상세 주소 (ex. 604호)
     /* 픽업 주문 추가 정보 */
     String pickupMinute; // 픽업 예상 시간(분) (ex. 30)
     /* 예약 주문 추가 정보 */

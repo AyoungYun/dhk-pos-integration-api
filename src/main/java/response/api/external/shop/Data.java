@@ -20,7 +20,7 @@ public class Data {
     String faxNo; // 팩스 번호 (ex. null)
     String emailAddr; // 이메일 주소 (ex. null)
     String postNo; // 우편번호 (ex. 08513)
-    String addr; // 주소 (ex. 서울 금천구 벚꽃로 234 (가산동, 에이스하이엔드타워6차)
+    String addr; // 주소 (ex. 서울 금천구 벚꽃로 234 (가산동, 에이스하이엔드타워6차))
     String addrDtl; // 상세 주소 (ex. 604호)
     String useYn; // 매장 상태 구분 (ex. Y)
 }

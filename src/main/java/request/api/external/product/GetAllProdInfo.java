@@ -11,7 +11,7 @@ package request.api.external.product;
  * Descriptions: 매장의 전체 상품 정보를 조회합니다.
  */
 
-public class GetProdsInfo {
+public class GetAllProdInfo {
 
     String shopCd; // 매장 코드 (ex. DT0017)
 }

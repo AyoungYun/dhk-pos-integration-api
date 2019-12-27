@@ -3,7 +3,7 @@ package response.api.external.product;
 /**
  * [RESPONSE]
  * USE
- *  - GetProdsInfo - Data (상품 정보 조회 (전체))
+ *  - GetAllProdInfo - Data (상품 정보 조회 (전체))
  *  - GetProdInfo - Data (상품 정보 조회 (단품))
  */
 

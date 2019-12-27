@@ -11,7 +11,7 @@ package response.api.external.product;
  * Descriptions: 매장의 전체 상품 정보를 조회합니다.
  */
 
-public class GetProdsInfo {
+public class GetAllProdInfo {
 
     String resultCode; // 성공 결과 코드 (ex. 000)
     String resultMsg; // 결과 메세지 (ex. success)
