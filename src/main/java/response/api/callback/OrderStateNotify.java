@@ -11,7 +11,7 @@ package response.api.callback;
  * Descriptions: 주문 상태가 갱신이 되면 제휴사에 통지해 줍니다. (제휴사에서 콜백 URL 전달)
  */
 
-public class OrderStatusNotify {
+public class OrderStateNotify {
 
     String resultCode; // 성공 결과 코드 (ex. 000)
     String resultMsg; // 결과 메세지 (ex. success)
