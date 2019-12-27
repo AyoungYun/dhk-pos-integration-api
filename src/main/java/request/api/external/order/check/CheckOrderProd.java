@@ -16,5 +16,5 @@ package request.api.external.order.check;
 public class CheckOrderProd {
 
     String shopCd; // 매장 코드 (ex. DT0017)
-    Prod prods;
+    Prod prods; // 상품 정보
 }
