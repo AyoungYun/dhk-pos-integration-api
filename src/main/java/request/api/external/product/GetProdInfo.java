@@ -13,6 +13,19 @@ package request.api.external.product;
 
 public class GetProdInfo {
 
-    String shopCd; // 매장 코드 (ex. DT0017)
-    String prodCd; // 상품 코드 (ex. 000109)
+    private String shopCd; // 매장 코드 (ex. DT0017)
+    private String prodCd; // 상품 코드 (ex. 000109)
+
+    public GetProdInfo(String shopCd, String prodCd) {
+        this.shopCd = shopCd;
+        this.prodCd = prodCd;
+    }
+
+    public String getShopCd() {
+        return shopCd;
+    }
+
+    public String getProdCd() {
+        return prodCd;
+    }
 }

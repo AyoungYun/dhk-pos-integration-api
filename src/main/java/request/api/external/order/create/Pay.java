@@ -8,6 +8,19 @@ package request.api.external.order.create;
 
 public class Pay {
 
-    String payFg; // 01: 현금, 02: 신용카드 (ex. 02)
-    int payAmt; // 결제 금액 (ex. 12000)
+    private String payFg; // 01: 현금, 02: 신용카드 (ex. 02)
+    private Integer payAmt; // 결제 금액 (ex. 12000)
+
+    public Pay(String payFg, Integer payAmt) {
+        this.payFg = payFg;
+        this.payAmt = payAmt;
+    }
+
+    public String getPayFg() {
+        return payFg;
+    }
+
+    public Integer getPayAmt() {
+        return payAmt;
+    }
 }

@@ -13,5 +13,13 @@ package request.api.external.shop.open;
 
 public class GetShopOpenStatus {
 
-    String shopCd; // 매장 코드 (ex. DT0017)
+    private String shopCd; // 매장 코드 (ex. DT0017)
+
+    public GetShopOpenStatus(String shopCd) {
+        this.shopCd = shopCd;
+    }
+
+    public String getShopCd() {
+        return shopCd;
+    }
 }

@@ -8,6 +8,19 @@ package request.api.external.order.check;
 
 public class Side {
 
-    String prodCd; // 상품 코드 (ex. 000002)
-    String prodNm; // 상품명 - 선택: 값이 없으면 상품명 일치 여부 체크 안함 (ex. 곱배기)
+    private String prodCd; // 상품 코드 (ex. 000002)
+    private String prodNm; // 상품명 - 선택: 값이 없으면 상품명 일치 여부 체크 안함 (ex. 곱배기)
+
+    public Side(String prodCd, String prodNm) {
+        this.prodCd = prodCd;
+        this.prodNm = prodNm;
+    }
+
+    public String getProdCd() {
+        return prodCd;
+    }
+
+    public String getProdNm() {
+        return prodNm;
+    }
 }

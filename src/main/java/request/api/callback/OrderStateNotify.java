@@ -13,10 +13,44 @@ package request.api.callback;
 
 public class OrderStateNotify {
 
-    String shopCd; // 매장 코드 (ex. DT0017)
-    String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
-    String stepCd; // 스탭 코드 (ex. 100)
-    String orderState; // 주문 상태 (ex. accepted)
-    String notiMsg; // 고객에게 보여 줄 메세지 (ex. 접수가 되었습니다. 배송 예상 시간은 17시 50분 입니다.)
-    String deliveryTime; // 배송 예상 시간 - 접수 시간부터 기본 50분 (ex. 17:50)
+    private String shopCd; // 매장 코드 (ex. DT0017)
+    private String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
+    private String stepCd; // 스탭 코드 (ex. 100)
+    private String orderState; // 주문 상태 (ex. accepted)
+    private String notiMsg; // 고객에게 보여 줄 메세지 (ex. 접수가 되었습니다. 배송 예상 시간은 17시 50분 입니다.)
+    private String deliveryTime; // 배송 예상 시간 - 접수 시간부터 기본 50분 (ex. 17:50)
+
+    public OrderStateNotify(String shopCd, String mobileOrderNo, String stepCd, String orderState, String notiMsg,
+                            String deliveryTime) {
+        this.shopCd = shopCd;
+        this.mobileOrderNo = mobileOrderNo;
+        this.stepCd = stepCd;
+        this.orderState = orderState;
+        this.notiMsg = notiMsg;
+        this.deliveryTime = deliveryTime;
+    }
+
+    public String getShopCd() {
+        return shopCd;
+    }
+
+    public String getMobileOrderNo() {
+        return mobileOrderNo;
+    }
+
+    public String getStepCd() {
+        return stepCd;
+    }
+
+    public String getOrderState() {
+        return orderState;
+    }
+
+    public String getNotiMsg() {
+        return notiMsg;
+    }
+
+    public String getDeliveryTime() {
+        return deliveryTime;
+    }
 }

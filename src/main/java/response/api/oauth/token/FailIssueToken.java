@@ -14,6 +14,19 @@ package response.api.oauth.token;
 
 public class FailIssueToken {
 
-    String error; // (ex. invalid_client)
-    String error_description; // (ex. Bad client credentials)
+    private String error; // (ex. invalid_client)
+    private String error_description; // (ex. Bad client credentials)
+
+    public FailIssueToken(String error, String error_description) {
+        this.error = error;
+        this.error_description = error_description;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public String getError_description() {
+        return error_description;
+    }
 }

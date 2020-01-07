@@ -11,8 +11,31 @@ import java.util.List;
 
 public class Data {
 
-    String shopCd; // (ex. DT0017)
-    List<Prod> prods;
-    List<Option> options;
-    List<Side> sides;
+    private String shopCd; // (ex. DT0017)
+    private List<Prod> prods;
+    private List<Option> options;
+    private List<Side> sides;
+
+    public Data(String shopCd, List<Prod> prods, List<Option> options, List<Side> sides) {
+        this.shopCd = shopCd;
+        this.prods = prods;
+        this.options = options;
+        this.sides = sides;
+    }
+
+    public String getShopCd() {
+        return shopCd;
+    }
+
+    public List<Prod> getProds() {
+        return prods;
+    }
+
+    public List<Option> getOptions() {
+        return options;
+    }
+
+    public List<Side> getSides() {
+        return sides;
+    }
 }

@@ -8,8 +8,31 @@ package response.api.external.shop.open;
 
 public class Data {
 
-    String shopCd; // 매장 코드 (ex. DT0017)
-    String posNo; // 포스 번호 (ex. 01)
-    String saleDate; // 개점일 - YYYYMMDDHH24MISS (ex. 20180603121314)
-    String closeFg; // 개점여부 - 1: 개점, 2: 중간마감, 3: 일마감 (ex. 1)
+    private String shopCd; // 매장 코드 (ex. DT0017)
+    private String posNo; // 포스 번호 (ex. 01)
+    private String saleDate; // 개점일 - YYYYMMDDHH24MISS (ex. 20180603121314)
+    private String closeFg; // 개점여부 - 1: 개점, 2: 중간마감, 3: 일마감 (ex. 1)
+
+    public Data(String shopCd, String posNo, String saleDate, String closeFg) {
+        this.shopCd = shopCd;
+        this.posNo = posNo;
+        this.saleDate = saleDate;
+        this.closeFg = closeFg;
+    }
+
+    public String getShopCd() {
+        return shopCd;
+    }
+
+    public String getPosNo() {
+        return posNo;
+    }
+
+    public String getSaleDate() {
+        return saleDate;
+    }
+
+    public String getCloseFg() {
+        return closeFg;
+    }
 }

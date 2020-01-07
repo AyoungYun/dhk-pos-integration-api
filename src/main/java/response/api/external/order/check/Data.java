@@ -9,6 +9,19 @@ package response.api.external.order.check;
 
 public class Data {
 
-    String prodCd; // 상품 코드 (ex. 000109)
-    String prodNm; // 상품명 (ex. 세트메뉴)
+    private String prodCd; // 상품 코드 (ex. 000109)
+    private String prodNm; // 상품명 (ex. 세트메뉴)
+
+    public Data(String prodCd, String prodNm) {
+        this.prodCd = prodCd;
+        this.prodNm = prodNm;
+    }
+
+    public String getProdCd() {
+        return prodCd;
+    }
+
+    public String getProdNm() {
+        return prodNm;
+    }
 }

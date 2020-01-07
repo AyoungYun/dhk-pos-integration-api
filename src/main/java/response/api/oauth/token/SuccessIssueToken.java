@@ -14,8 +14,31 @@ package response.api.oauth.token;
 
 public class SuccessIssueToken {
 
-    String access_token; // API 연동 접속 토큰 (ex. 5a72af0a-b21e-446f-9060-758bf048edfe)
-    String token_type; // 토큰 유형 (ex. bearer)
-    int expires_in; // 토큰 만료 (ex. 43199)
-    String scope; // 토큰 범위 (ex. read write trust)
+    private String access_token; // API 연동 접속 토큰 (ex. 5a72af0a-b21e-446f-9060-758bf048edfe)
+    private String token_type; // 토큰 유형 (ex. bearer)
+    private Integer expires_in; // 토큰 만료 (ex. 43199)
+    private String scope; // 토큰 범위 (ex. read write trust)
+
+    public SuccessIssueToken(String access_token, String token_type, Integer expires_in, String scope) {
+        this.access_token = access_token;
+        this.token_type = token_type;
+        this.expires_in = expires_in;
+        this.scope = scope;
+    }
+
+    public String getAccess_token() {
+        return access_token;
+    }
+
+    public String getToken_type() {
+        return token_type;
+    }
+
+    public Integer getExpires_in() {
+        return expires_in;
+    }
+
+    public String getScope() {
+        return scope;
+    }
 }

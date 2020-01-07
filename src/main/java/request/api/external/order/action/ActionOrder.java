@@ -13,6 +13,19 @@ package request.api.external.order.action;
 
 public class ActionOrder {
 
-    String action; // 등록(create), 취소(cancel), 조회(search) 처리 지정 (ex. create)
-    Data data;
+    private String action; // 등록(create), 취소(cancel), 조회(search) 처리 지정 (ex. create)
+    private Data data;
+
+    public ActionOrder(String action, Data data) {
+        this.action = action;
+        this.data = data;
+    }
+
+    public String getAction() {
+        return action;
+    }
+
+    public Data getData() {
+        return data;
+    }
 }

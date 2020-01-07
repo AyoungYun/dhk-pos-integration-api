@@ -18,29 +18,141 @@ import java.util.List;
 
 public class CreateOrder {
 
-    String shopCd; // 매장 코드 (ex. DT0017)
-    String orderTime; // 주문 일시 - YYYYMMDDHH24MISS (ex. 20171205134850)
-    String mobileOrderTypeCd; // D: 배달 주문, P: 픽업 주문, R: 예약 주문 (ex. D)
-    String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
-    int deliveryFee; // 배송비 (ex. 500)
-    int totalAmount; // 총 주문금액 (ex. 13500)
-    int actualAmount; // 실 주문금액 - 할인 및 배송비 등은 차감 (ex. 11500)
-    int totalDiscount; // 총 할인금액 (ex. 1500)
-    String prepaidYn; // 선불: Y, 후불: N (ex. Y)
-    Pay pays; // 결제 정보
-    List<Prod> prods; // 상품 정보
+    private String shopCd; // 매장 코드 (ex. DT0017)
+    private String orderTime; // 주문 일시 - YYYYMMDDHH24MISS (ex. 20171205134850)
+    private String mobileOrderTypeCd; // D: 배달 주문, P: 픽업 주문, R: 예약 주문 (ex. D)
+    private String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
+    private Integer deliveryFee; // 배송비 (ex. 500)
+    private Integer totalAmount; // 총 주문금액 (ex. 13500)
+    private Integer actualAmount; // 실 주문금액 - 할인 및 배송비 등은 차감 (ex. 11500)
+    private Integer totalDiscount; // 총 할인금액 (ex. 1500)
+    private String prepaidYn; // 선불: Y, 후불: N (ex. Y)
+    private Pay pays; // 결제 정보
+    private List<Prod> prods; // 상품 정보
     /* 공통 */
-    String customerName; // 고객명 - 한글 3글자 입력 제한 (ex. 고객명)
-    String phone; // 연락처 (ex. 01099999999)
-    String message; // 사용자 메세지 (ex. 1층에서 연락주세요)
-    String visitTime; // 방문(픽업) 예약 시간 - YYYYMMDDHH24MISS (ex. 20171205134850)
+    private String customerName; // 고객명 - 한글 3글자 입력 제한 (ex. 고객명)
+    private String phone; // 연락처 (ex. 01099999999)
+    private String message; // 사용자 메세지 (ex. 1층에서 연락주세요)
+    private String visitTime; // 방문(픽업) 예약 시간 - YYYYMMDDHH24MISS (ex. 20171205134850)
     /* 배달 주문 추가 정보 */
-    String landAddr; // 지번 주소 (ex. 서울특별시 금천구 가산동 60-25 에이스하이엔드타워6차)
-    String landAddrDetail; // 지번 상세 주소 (ex. 604호)
-    String loadAddr; // 도로명 주소 (ex. 서울특별시 금천구 벚꽃로 234(가산동))
-    String loadAddrDetail; // 도로명 상세 주소 (ex. 604호)
+    private String landAddr; // 지번 주소 (ex. 서울특별시 금천구 가산동 60-25 에이스하이엔드타워6차)
+    private String landAddrDetail; // 지번 상세 주소 (ex. 604호)
+    private String loadAddr; // 도로명 주소 (ex. 서울특별시 금천구 벚꽃로 234(가산동))
+    private String loadAddrDetail; // 도로명 상세 주소 (ex. 604호)
     /* 픽업 주문 추가 정보 */
-    String pickupMinute; // 픽업 예상 시간(분) (ex. 30)
+    private String pickupMinute; // 픽업 예상 시간(분) (ex. 30)
     /* 예약 주문 추가 정보 */
-    String visitCustomerCount; // 방문 고객 수 (ex. 5)
+    private String visitCustomerCount; // 방문 고객 수 (ex. 5)
+
+    public CreateOrder(String shopCd, String orderTime, String mobileOrderTypeCd, String mobileOrderNo,
+                       Integer deliveryFee, Integer totalAmount, Integer actualAmount, Integer totalDiscount,
+                       String prepaidYn, Pay pays, List<Prod> prods, String customerName, String phone, String message,
+                       String visitTime, String landAddr, String landAddrDetail, String loadAddr, String loadAddrDetail,
+                       String pickupMinute, String visitCustomerCount) {
+        this.shopCd = shopCd;
+        this.orderTime = orderTime;
+        this.mobileOrderTypeCd = mobileOrderTypeCd;
+        this.mobileOrderNo = mobileOrderNo;
+        this.deliveryFee = deliveryFee;
+        this.totalAmount = totalAmount;
+        this.actualAmount = actualAmount;
+        this.totalDiscount = totalDiscount;
+        this.prepaidYn = prepaidYn;
+        this.pays = pays;
+        this.prods = prods;
+        this.customerName = customerName;
+        this.phone = phone;
+        this.message = message;
+        this.visitTime = visitTime;
+        this.landAddr = landAddr;
+        this.landAddrDetail = landAddrDetail;
+        this.loadAddr = loadAddr;
+        this.loadAddrDetail = loadAddrDetail;
+        this.pickupMinute = pickupMinute;
+        this.visitCustomerCount = visitCustomerCount;
+    }
+
+    public String getShopCd() {
+        return shopCd;
+    }
+
+    public String getOrderTime() {
+        return orderTime;
+    }
+
+    public String getMobileOrderTypeCd() {
+        return mobileOrderTypeCd;
+    }
+
+    public String getMobileOrderNo() {
+        return mobileOrderNo;
+    }
+
+    public Integer getDeliveryFee() {
+        return deliveryFee;
+    }
+
+    public Integer getTotalAmount() {
+        return totalAmount;
+    }
+
+    public Integer getActualAmount() {
+        return actualAmount;
+    }
+
+    public Integer getTotalDiscount() {
+        return totalDiscount;
+    }
+
+    public String getPrepaidYn() {
+        return prepaidYn;
+    }
+
+    public Pay getPays() {
+        return pays;
+    }
+
+    public List<Prod> getProds() {
+        return prods;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getVisitTime() {
+        return visitTime;
+    }
+
+    public String getLandAddr() {
+        return landAddr;
+    }
+
+    public String getLandAddrDetail() {
+        return landAddrDetail;
+    }
+
+    public String getLoadAddr() {
+        return loadAddr;
+    }
+
+    public String getLoadAddrDetail() {
+        return loadAddrDetail;
+    }
+
+    public String getPickupMinute() {
+        return pickupMinute;
+    }
+
+    public String getVisitCustomerCount() {
+        return visitCustomerCount;
+    }
 }

@@ -16,7 +16,25 @@ package response.api.external.order.create;
 
 public class CreateOrder {
 
-    String resultCode; // 성공 결과 코드 (ex. 000)
-    String resultMsg; // 결과 메세지 (ex. success)
-    Data data;
+    private String resultCode; // 성공 결과 코드 (ex. 000)
+    private String resultMsg; // 결과 메세지 (ex. success)
+    private Data data;
+
+    public CreateOrder(String resultCode, String resultMsg, Data data) {
+        this.resultCode = resultCode;
+        this.resultMsg = resultMsg;
+        this.data = data;
+    }
+
+    public String getResultCode() {
+        return resultCode;
+    }
+
+    public String getResultMsg() {
+        return resultMsg;
+    }
+
+    public Data getData() {
+        return data;
+    }
 }

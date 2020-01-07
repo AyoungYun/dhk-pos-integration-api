@@ -13,5 +13,13 @@ package request.api.external.shop.status;
 
 public class GetShopStatus {
 
-    String shopCd; // 매장 코드 (ex. DT0017)
+    private String shopCd; // 매장 코드 (ex. DT0017)
+
+    public GetShopStatus(String shopCd) {
+        this.shopCd = shopCd;
+    }
+
+    public String getShopCd() {
+        return shopCd;
+    }
 }

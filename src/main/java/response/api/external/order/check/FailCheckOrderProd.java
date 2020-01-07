@@ -15,7 +15,25 @@ package response.api.external.order.check;
 
 public class FailCheckOrderProd {
 
-    String resultCode; // 성공 결과 코드 (ex. SV0027)
-    String resultMsg; // 결과 메세지 - 실패 사유 (ex. 일시 품절 된 상품이 포함되어 있습니다.)
-    Data data; // 실패한 상품 정보
+    private String resultCode; // 성공 결과 코드 (ex. SV0027)
+    private String resultMsg; // 결과 메세지 - 실패 사유 (ex. 일시 품절 된 상품이 포함되어 있습니다.)
+    private Data data; // 실패한 상품 정보
+
+    public FailCheckOrderProd(String resultCode, String resultMsg, Data data) {
+        this.resultCode = resultCode;
+        this.resultMsg = resultMsg;
+        this.data = data;
+    }
+
+    public String getResultCode() {
+        return resultCode;
+    }
+
+    public String getResultMsg() {
+        return resultMsg;
+    }
+
+    public Data getData() {
+        return data;
+    }
 }
