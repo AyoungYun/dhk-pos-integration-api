@@ -1,5 +1,7 @@
 package request.api.external.order.create;
 
+import java.util.List;
+
 /**
  * [REQUEST]
  * Title: 주문(결제) 등록
@@ -26,7 +28,7 @@ public class CreateOrder {
     int totalDiscount; // 총 할인금액 (ex. 1500)
     String prepaidYn; // 선불: Y, 후불: N (ex. Y)
     Pay pays; // 결제 정보
-    Prod prods; // 상품 정보
+    List<Prod> prods; // 상품 정보
     /* 공통 */
     String customerName; // 고객명 - 한글 3글자 입력 제한 (ex. 고객명)
     String phone; // 연락처 (ex. 01099999999)

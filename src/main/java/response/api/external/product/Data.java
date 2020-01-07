@@ -1,5 +1,7 @@
 package response.api.external.product;
 
+import java.util.List;
+
 /**
  * [RESPONSE]
  * USE
@@ -10,7 +12,7 @@ package response.api.external.product;
 public class Data {
 
     String shopCd; // (ex. DT0017)
-    Prod prods;
-    Option options;
-    Side sides;
+    List<Prod> prods;
+    List<Option> options;
+    List<Side> sides;
 }

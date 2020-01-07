@@ -1,5 +1,7 @@
 package request.api.external.order.check;
 
+import java.util.List;
+
 /**
  * [REQUEST]
  * Title: 주문 상품 확인
@@ -16,5 +18,5 @@ package request.api.external.order.check;
 public class CheckOrderProd {
 
     String shopCd; // 매장 코드 (ex. DT0017)
-    Prod prods; // 상품 정보
+    List<Prod> prods; // 상품 정보
 }
