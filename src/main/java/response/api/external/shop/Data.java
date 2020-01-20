@@ -24,24 +24,119 @@ public class Data {
     private final String addrDtl; // 상세 주소 (ex. 604호)
     private final String useYn; // 매장 상태 구분 (ex. Y)
 
-    public Data(String shopCd, String shopNm, String ownerNm, String bizNo, String bizTypeNm, String bizKindNm,
-                String bizShopNm, String telNo, String hpNo, String faxNo, String emailAddr, String postNo, String addr,
-                String addrDtl, String useYn) {
-        this.shopCd = shopCd;
-        this.shopNm = shopNm;
-        this.ownerNm = ownerNm;
-        this.bizNo = bizNo;
-        this.bizTypeNm = bizTypeNm;
-        this.bizKindNm = bizKindNm;
-        this.bizShopNm = bizShopNm;
-        this.telNo = telNo;
-        this.hpNo = hpNo;
-        this.faxNo = faxNo;
-        this.emailAddr = emailAddr;
-        this.postNo = postNo;
-        this.addr = addr;
-        this.addrDtl = addrDtl;
-        this.useYn = useYn;
+    public Data(DataBuilder builder) {
+        this.shopCd = builder.shopCd;
+        this.shopNm = builder.shopNm;
+        this.ownerNm = builder.ownerNm;
+        this.bizNo = builder.bizNo;
+        this.bizTypeNm = builder.bizTypeNm;
+        this.bizKindNm = builder.bizKindNm;
+        this.bizShopNm = builder.bizShopNm;
+        this.telNo = builder.telNo;
+        this.hpNo = builder.hpNo;
+        this.faxNo = builder.faxNo;
+        this.emailAddr = builder.emailAddr;
+        this.postNo = builder.postNo;
+        this.addr = builder.addr;
+        this.addrDtl = builder.addrDtl;
+        this.useYn = builder.useYn;
+    }
+
+    public static final class DataBuilder {
+        private String shopCd;
+        private String shopNm;
+        private String ownerNm;
+        private String bizNo;
+        private String bizTypeNm;
+        private String bizKindNm;
+        private String bizShopNm;
+        private String telNo;
+        private String hpNo;
+        private String faxNo;
+        private String emailAddr;
+        private String postNo;
+        private String addr;
+        private String addrDtl;
+        private String useYn;
+
+        public DataBuilder withShopCd(String shopCd) {
+            this.shopCd = shopCd;
+            return this;
+        }
+
+        public DataBuilder withShopNm(String shopNm) {
+            this.shopNm = shopNm;
+            return this;
+        }
+
+        public DataBuilder withOwnerNm(String ownerNm) {
+            this.ownerNm = ownerNm;
+            return this;
+        }
+
+        public DataBuilder withBizNo(String bizNo) {
+            this.bizNo = bizNo;
+            return this;
+        }
+
+        public DataBuilder withBizTypeNm(String bizTypeNm) {
+            this.bizTypeNm = bizTypeNm;
+            return this;
+        }
+
+        public DataBuilder withBizKindNm(String bizKindNm) {
+            this.bizKindNm = bizKindNm;
+            return this;
+        }
+
+        public DataBuilder withBizShopNm(String bizShopNm) {
+            this.bizShopNm = bizShopNm;
+            return this;
+        }
+
+        public DataBuilder withTelNo(String telNo) {
+            this.telNo = telNo;
+            return this;
+        }
+
+        public DataBuilder withHpNo(String hpNo) {
+            this.hpNo = hpNo;
+            return this;
+        }
+
+        public DataBuilder withFaxNo(String faxNo) {
+            this.faxNo = faxNo;
+            return this;
+        }
+
+        public DataBuilder withEmailAddr(String emailAddr) {
+            this.emailAddr = emailAddr;
+            return this;
+        }
+
+        public DataBuilder withPostNo(String postNo) {
+            this.postNo = postNo;
+            return this;
+        }
+
+        public DataBuilder withAddr(String addr) {
+            this.addr = addr;
+            return this;
+        }
+
+        public DataBuilder withAddrDtl(String addrDtl) {
+            this.addrDtl = addrDtl;
+            return this;
+        }
+
+        public DataBuilder withUseYn(String useYn) {
+            this.useYn = useYn;
+            return this;
+        }
+
+        public Data build() {
+            return new Data(this);
+        }
     }
 
     public String getShopCd() {

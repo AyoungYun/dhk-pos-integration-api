@@ -20,18 +20,84 @@ public class Prod {
     private final String taxYn; // 과세 상품 여부 - Y: 과세, N: 비과세 (ex. Y)
     private final String soldOutYn; // 매진 여부 - Y/N (ex. N)
 
-    public Prod(String classCd, String classNm, String prodCd, String prodNm, Integer price, String optionClassCd,
-                String sideClassCds, String setYn, String taxYn, String soldOutYn) {
-        this.classCd = classCd;
-        this.classNm = classNm;
-        this.prodCd = prodCd;
-        this.prodNm = prodNm;
-        this.price = price;
-        this.optionClassCd = optionClassCd;
-        this.sideClassCds = sideClassCds;
-        this.setYn = setYn;
-        this.taxYn = taxYn;
-        this.soldOutYn = soldOutYn;
+    public Prod(ProdBuilder builder) {
+        this.classCd = builder.classCd;
+        this.classNm = builder.classNm;
+        this.prodCd = builder.prodCd;
+        this.prodNm = builder.prodNm;
+        this.price = builder.price;
+        this.optionClassCd = builder.optionClassCd;
+        this.sideClassCds = builder.sideClassCds;
+        this.setYn = builder.setYn;
+        this.taxYn = builder.taxYn;
+        this.soldOutYn = builder.soldOutYn;
+    }
+
+    public static final class ProdBuilder {
+        private String classCd;
+        private String classNm;
+        private String prodCd;
+        private String prodNm;
+        private Integer price;
+        private String optionClassCd;
+        private String sideClassCds;
+        private String setYn;
+        private String taxYn;
+        private String soldOutYn;
+
+        public ProdBuilder withClassCd(String classCd) {
+            this.classCd = classCd;
+            return this;
+        }
+
+        public ProdBuilder withClassNm(String classNm) {
+            this.classNm = classNm;
+            return this;
+        }
+
+        public ProdBuilder withProdCd(String prodCd) {
+            this.prodCd = prodCd;
+            return this;
+        }
+
+        public ProdBuilder withProdNm(String prodNm) {
+            this.prodNm = prodNm;
+            return this;
+        }
+
+        public ProdBuilder withPrice(Integer price) {
+            this.price = price;
+            return this;
+        }
+
+        public ProdBuilder withOptionClassCd(String optionClassCd) {
+            this.optionClassCd = optionClassCd;
+            return this;
+        }
+
+        public ProdBuilder withSideClassCds(String sideClassCds) {
+            this.sideClassCds = sideClassCds;
+            return this;
+        }
+
+        public ProdBuilder withSetYn(String setYn) {
+            this.setYn = setYn;
+            return this;
+        }
+
+        public ProdBuilder withTaxYn(String taxYn) {
+            this.taxYn = taxYn;
+            return this;
+        }
+
+        public ProdBuilder withSoldOutYn(String soldOutYn) {
+            this.soldOutYn = soldOutYn;
+            return this;
+        }
+
+        public Prod build() {
+            return new Prod(this);
+        }
     }
 
     public String getClassCd() {

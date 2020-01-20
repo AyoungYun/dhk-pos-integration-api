@@ -44,33 +44,163 @@ public class CreateOrder {
     /* 예약 주문 추가 정보 */
     private final String visitCustomerCount; // 방문 고객 수 (ex. 5)
 
-    public CreateOrder(String shopCd, String orderTime, String mobileOrderTypeCd, String mobileOrderNo,
-                       Integer deliveryFee, Integer totalAmount, Integer actualAmount, Integer totalDiscount,
-                       String prepaidYn, Pay pays, List<Prod> prods, String customerName, String phone, String message,
-                       String visitTime, String landAddr, String landAddrDetail, String loadAddr, String loadAddrDetail,
-                       String pickupMinute, String visitCustomerCount) {
-        this.shopCd = shopCd;
-        this.orderTime = orderTime;
-        this.mobileOrderTypeCd = mobileOrderTypeCd;
-        this.mobileOrderNo = mobileOrderNo;
-        this.deliveryFee = deliveryFee;
-        this.totalAmount = totalAmount;
-        this.actualAmount = actualAmount;
-        this.totalDiscount = totalDiscount;
-        this.prepaidYn = prepaidYn;
-        this.pays = pays;
-        this.prods = prods;
-        this.customerName = customerName;
-        this.phone = phone;
-        this.message = message;
-        this.visitTime = visitTime;
-        this.landAddr = landAddr;
-        this.landAddrDetail = landAddrDetail;
-        this.loadAddr = loadAddr;
-        this.loadAddrDetail = loadAddrDetail;
-        this.pickupMinute = pickupMinute;
-        this.visitCustomerCount = visitCustomerCount;
+    public CreateOrder(CreateOrderBuilder builder) {
+        this.shopCd = builder.shopCd;
+        this.orderTime = builder.orderTime;
+        this.mobileOrderTypeCd = builder.mobileOrderTypeCd;
+        this.mobileOrderNo = builder.mobileOrderNo;
+        this.deliveryFee = builder.deliveryFee;
+        this.totalAmount = builder.totalAmount;
+        this.actualAmount = builder.actualAmount;
+        this.totalDiscount = builder.totalDiscount;
+        this.prepaidYn = builder.prepaidYn;
+        this.pays = builder.pays;
+        this.prods = builder.prods;
+        this.customerName = builder.customerName;
+        this.phone = builder.phone;
+        this.message = builder.message;
+        this.visitTime = builder.visitTime;
+        this.landAddr = builder.landAddr;
+        this.landAddrDetail = builder.landAddrDetail;
+        this.loadAddr = builder.loadAddr;
+        this.loadAddrDetail = builder.loadAddrDetail;
+        this.pickupMinute = builder.pickupMinute;
+        this.visitCustomerCount = builder.visitCustomerCount;
     }
+
+    public static final class CreateOrderBuilder {
+        private String shopCd;
+        private String orderTime;
+        private String mobileOrderTypeCd;
+        private String mobileOrderNo;
+        private Integer deliveryFee;
+        private Integer totalAmount;
+        private Integer actualAmount;
+        private Integer totalDiscount;
+        private String prepaidYn;
+        private Pay pays;
+        private List<Prod> prods;
+        private String customerName;
+        private String phone;
+        private String message;
+        private String visitTime;
+        private String landAddr;
+        private String landAddrDetail;
+        private String loadAddr;
+        private String loadAddrDetail;
+        private String pickupMinute;
+        private String visitCustomerCount;
+
+        public CreateOrderBuilder withShopCd(String shopCd) {
+            this.shopCd = shopCd;
+            return this;
+        }
+
+        public CreateOrderBuilder withOrderTime(String orderTime) {
+            this.orderTime = orderTime;
+            return this;
+        }
+
+        public CreateOrderBuilder withMobileOrderTypeCd(String mobileOrderTypeCd) {
+            this.mobileOrderTypeCd = mobileOrderTypeCd;
+            return this;
+        }
+
+        public CreateOrderBuilder withMobileOrderNo(String mobileOrderNo) {
+            this.mobileOrderNo = mobileOrderNo;
+            return this;
+        }
+
+        public CreateOrderBuilder withDeliveryFee(Integer deliveryFee) {
+            this.deliveryFee = deliveryFee;
+            return this;
+        }
+
+        public CreateOrderBuilder withTotalAmount(Integer totalAmount) {
+            this.totalAmount = totalAmount;
+            return this;
+        }
+
+        public CreateOrderBuilder withActualAmount(Integer actualAmount) {
+            this.actualAmount = actualAmount;
+            return this;
+        }
+
+        public CreateOrderBuilder withTotalDiscount(Integer totalDiscount) {
+            this.totalDiscount = totalDiscount;
+            return this;
+        }
+
+        public CreateOrderBuilder withPrepaidYn(String prepaidYn) {
+            this.prepaidYn = prepaidYn;
+            return this;
+        }
+
+        public CreateOrderBuilder withPays(Pay pays) {
+            this.pays = pays;
+            return this;
+        }
+
+        public CreateOrderBuilder withProds(List<Prod> prods) {
+            this.prods = prods;
+            return this;
+        }
+
+        public CreateOrderBuilder withCustomerName(String customerName) {
+            this.customerName = customerName;
+            return this;
+        }
+
+        public CreateOrderBuilder withPhone(String phone) {
+            this.phone = phone;
+            return this;
+        }
+
+        public CreateOrderBuilder withMessage(String message) {
+            this.message = message;
+            return this;
+        }
+
+        public CreateOrderBuilder withVisitTime(String visitTime) {
+            this.visitTime = visitTime;
+            return this;
+        }
+
+        public CreateOrderBuilder withLandAddr(String landAddr) {
+            this.landAddr = landAddr;
+            return this;
+        }
+
+        public CreateOrderBuilder withLandAddrDetail(String landAddrDetail) {
+            this.landAddrDetail = landAddrDetail;
+            return this;
+        }
+
+        public CreateOrderBuilder withLoadAddr(String loadAddr) {
+            this.loadAddr = loadAddr;
+            return this;
+        }
+
+        public CreateOrderBuilder withLoadAddrDetail(String loadAddrDetail) {
+            this.loadAddrDetail = loadAddrDetail;
+            return this;
+        }
+
+        public CreateOrderBuilder withPickupMinute(String pickupMinute) {
+            this.pickupMinute = pickupMinute;
+            return this;
+        }
+
+        public CreateOrderBuilder withVisitCustomerCount(String visitCustomerCount) {
+            this.visitCustomerCount = visitCustomerCount;
+            return this;
+        }
+
+        public CreateOrder build() {
+            return new CreateOrder(this);
+        }
+    }
+
 
     public String getShopCd() {
         return shopCd;

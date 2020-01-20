@@ -19,16 +19,70 @@ public class Prod {
     private final List<Option> option; // 상품 속성
     private final List<Side> sides; // 세트 메뉴 추가 상품
 
-    public Prod(String prodCd, String prodNm, Integer qty, Integer price, String discountType, Integer discount,
-                List<Option> option, List<Side> sides) {
-        this.prodCd = prodCd;
-        this.prodNm = prodNm;
-        this.qty = qty;
-        this.price = price;
-        this.discountType = discountType;
-        this.discount = discount;
-        this.option = option;
-        this.sides = sides;
+    public Prod(ProdBuilder builder) {
+        this.prodCd = builder.prodCd;
+        this.prodNm = builder.prodNm;
+        this.qty = builder.qty;
+        this.price = builder.price;
+        this.discountType = builder.discountType;
+        this.discount = builder.discount;
+        this.option = builder.option;
+        this.sides = builder.sides;
+    }
+
+    public static final class ProdBuilder {
+        private String prodCd;
+        private String prodNm;
+        private Integer qty;
+        private Integer price;
+        private String discountType;
+        private Integer discount;
+        private List<Option> option;
+        private List<Side> sides;
+
+        public ProdBuilder withProdCd(String prodCd) {
+            this.prodCd = prodCd;
+            return this;
+        }
+
+        public ProdBuilder withProdNm(String prodNm) {
+            this.prodNm = prodNm;
+            return this;
+        }
+
+        public ProdBuilder withQty(Integer qty) {
+            this.qty = qty;
+            return this;
+        }
+
+        public ProdBuilder withPrice(Integer price) {
+            this.price = price;
+            return this;
+        }
+
+        public ProdBuilder withDiscountType(String discountType) {
+            this.discountType = discountType;
+            return this;
+        }
+
+        public ProdBuilder withDiscount(Integer discount) {
+            this.discount = discount;
+            return this;
+        }
+
+        public ProdBuilder withOption(List<Option> option) {
+            this.option = option;
+            return this;
+        }
+
+        public ProdBuilder withSides(List<Side> sides) {
+            this.sides = sides;
+            return this;
+        }
+
+        public Prod build() {
+            return new Prod(this);
+        }
     }
 
     public String getProdCd() {
