@@ -15,9 +15,9 @@ package response.api.external.order.check;
 
 public class SuccessCheckOrderProd {
 
-    private String resultCode; // 성공 결과 코드 (ex. 000)
-    private String resultMsg; // 결과 메세지 (ex. success)
-    private Data data; // (ex. null)
+    private final String resultCode; // 성공 결과 코드 (ex. 000)
+    private final String resultMsg; // 결과 메세지 (ex. success)
+    private final Data data; // (ex. null)
 
     public SuccessCheckOrderProd(String resultCode, String resultMsg, Data data) {
         this.resultCode = resultCode;

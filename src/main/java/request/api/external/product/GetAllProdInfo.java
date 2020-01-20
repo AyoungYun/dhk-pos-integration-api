@@ -13,7 +13,7 @@ package request.api.external.product;
 
 public class GetAllProdInfo {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
+    private final String shopCd; // 매장 코드 (ex. DT0017)
 
     public GetAllProdInfo(String shopCd) {
         this.shopCd = shopCd;

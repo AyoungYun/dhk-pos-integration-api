@@ -17,8 +17,8 @@ import java.util.List;
 
 public class CheckOrderProd {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
-    private List<Prod> prods; // 상품 정보
+    private final String shopCd; // 매장 코드 (ex. DT0017)
+    private final List<Prod> prods; // 상품 정보
 
     public CheckOrderProd(String shopCd, List<Prod> prods) {
         this.shopCd = shopCd;

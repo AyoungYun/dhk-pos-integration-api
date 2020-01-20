@@ -14,9 +14,9 @@ package request.api.oauth.token;
 
 public class IssueToken {
 
-    private String grant_type; // 인증방식 - 고정값 (client_credentials)
-    private String client_id; // 제휴사 발급 아이디 (ex. apiclient)
-    private String client_secret; // 제휴사 발급 비밀번호 (ex. apisecret)
+    private final String grant_type; // 인증방식 - 고정값 (client_credentials)
+    private final String client_id; // 제휴사 발급 아이디 (ex. apiclient)
+    private final String client_secret; // 제휴사 발급 비밀번호 (ex. apisecret)
 
     public IssueToken(String grant_type, String client_id, String client_secret) {
         this.grant_type = grant_type;

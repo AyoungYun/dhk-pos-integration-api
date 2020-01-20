@@ -14,10 +14,10 @@ package response.api.oauth.token;
 
 public class SuccessIssueToken {
 
-    private String access_token; // API 연동 접속 토큰 (ex. 5a72af0a-b21e-446f-9060-758bf048edfe)
-    private String token_type; // 토큰 유형 (ex. bearer)
-    private Integer expires_in; // 토큰 만료 (ex. 43199)
-    private String scope; // 토큰 범위 (ex. read write trust)
+    private final String access_token; // API 연동 접속 토큰 (ex. 5a72af0a-b21e-446f-9060-758bf048edfe)
+    private final String token_type; // 토큰 유형 (ex. bearer)
+    private final Integer expires_in; // 토큰 만료 (ex. 43199)
+    private final String scope; // 토큰 범위 (ex. read write trust)
 
     public SuccessIssueToken(String access_token, String token_type, Integer expires_in, String scope) {
         this.access_token = access_token;

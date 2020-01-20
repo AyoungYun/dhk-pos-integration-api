@@ -8,8 +8,8 @@ package request.api.external.order.create;
 
 public class Option {
 
-    private String optionCd; // 속성 코드 (ex. A01001)
-    private String optionNm; // 속성명 (ex. 맵게)
+    private final String optionCd; // 속성 코드 (ex. A01001)
+    private final String optionNm; // 속성명 (ex. 맵게)
 
     public Option(String optionCd, String optionNm) {
         this.optionCd = optionCd;

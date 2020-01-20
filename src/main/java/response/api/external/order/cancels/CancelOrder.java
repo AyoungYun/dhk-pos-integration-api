@@ -14,9 +14,9 @@ package response.api.external.order.cancels;
 
 public class CancelOrder {
 
-    private String resultCode; // 성공 결과 코드 (ex. 000)
-    private String resultMsg; // 결과 메세지 (ex. success)
-    private Data data;
+    private final String resultCode; // 성공 결과 코드 (ex. 000)
+    private final String resultMsg; // 결과 메세지 (ex. success)
+    private final Data data;
 
     public CancelOrder(String resultCode, String resultMsg, Data data) {
         this.resultCode = resultCode;

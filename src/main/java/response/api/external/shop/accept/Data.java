@@ -8,8 +8,8 @@ package response.api.external.shop.accept;
 
 public class Data {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
-    private String dumAutoAcceptYn; // Y: 자동 접수, N: 수동 접수 (ex. Y)
+    private final String shopCd; // 매장 코드 (ex. DT0017)
+    private final String dumAutoAcceptYn; // Y: 자동 접수, N: 수동 접수 (ex. Y)
 
     public Data(String shopCd, String dumAutoAcceptYn) {
         this.shopCd = shopCd;

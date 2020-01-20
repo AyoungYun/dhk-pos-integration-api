@@ -11,10 +11,10 @@ import java.util.List;
 
 public class Data {
 
-    private String shopCd; // (ex. DT0017)
-    private List<Prod> prods;
-    private List<Option> options;
-    private List<Side> sides;
+    private final String shopCd; // (ex. DT0017)
+    private final List<Prod> prods;
+    private final List<Option> options;
+    private final List<Side> sides;
 
     public Data(String shopCd, List<Prod> prods, List<Option> options, List<Side> sides) {
         this.shopCd = shopCd;

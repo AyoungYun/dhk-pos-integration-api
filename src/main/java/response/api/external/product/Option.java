@@ -9,10 +9,10 @@ package response.api.external.product;
 
 public class Option {
 
-    private String classCd; // 상품 옵션 분류 코드 (ex. 01)
-    private String classNm; // 상품 옵션 분류명 (ex. 맵기)
-    private String optionCd; // 상품 옵션 코드 (ex. A01001)
-    private String optionNm; // 상품 옵션명 (ex. 매운맛)
+    private final String classCd; // 상품 옵션 분류 코드 (ex. 01)
+    private final String classNm; // 상품 옵션 분류명 (ex. 맵기)
+    private final String optionCd; // 상품 옵션 코드 (ex. A01001)
+    private final String optionNm; // 상품 옵션명 (ex. 매운맛)
 
     public Option(String classCd, String classNm, String optionCd, String optionNm) {
         this.classCd = classCd;

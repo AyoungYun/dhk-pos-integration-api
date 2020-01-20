@@ -13,8 +13,8 @@ package request.api.external.order.search;
 
 public class SearchOrder {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
-    private String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
+    private final String shopCd; // 매장 코드 (ex. DT0017)
+    private final String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
 
     public SearchOrder(String shopCd, String mobileOrderNo) {
         this.shopCd = shopCd;

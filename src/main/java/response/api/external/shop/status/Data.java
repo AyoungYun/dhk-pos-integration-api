@@ -8,9 +8,9 @@ package response.api.external.shop.status;
 
 public class Data {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
-    private String shopStatFg; // 매장 상태 - 1: 오픈, 2: 폐점, 4: 출고 보류, 9: 데모 (ex. 1)
-    private String shopStatNm; // 매장 상태명 (ex. 오픈)
+    private final String shopCd; // 매장 코드 (ex. DT0017)
+    private final String shopStatFg; // 매장 상태 - 1: 오픈, 2: 폐점, 4: 출고 보류, 9: 데모 (ex. 1)
+    private final String shopStatNm; // 매장 상태명 (ex. 오픈)
 
     public Data(String shopCd, String shopStatFg, String shopStatNm) {
         this.shopCd = shopCd;

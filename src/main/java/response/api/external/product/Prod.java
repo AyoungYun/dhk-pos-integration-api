@@ -9,16 +9,16 @@ package response.api.external.product;
 
 public class Prod {
 
-    private String classCd; // 상품 분류 코드 (ex. 01)
-    private String classNm; // 상품 분류명 (ex. 기타)
-    private String prodCd; // 상품 코드 (ex. 000109)
-    private String prodNm; // 상품명 (ex. 세트메뉴)
-    private Integer price; // 상품 가격 (ex. 15000)
-    private String optionClassCd; // 상품 옵션 분류 코드 (ex. 01)
-    private String sideClassCds; // 사이드 상품 분류 코드 (ex. 000001000001,000001000002)
-    private String setYn; // 세트 상품 여부 - Y: 세트, N: 단품 (ex. N)
-    private String taxYn; // 과세 상품 여부 - Y: 과세, N: 비과세 (ex. Y)
-    private String soldOutYn; // 매진 여부 - Y/N (ex. N)
+    private final String classCd; // 상품 분류 코드 (ex. 01)
+    private final String classNm; // 상품 분류명 (ex. 기타)
+    private final String prodCd; // 상품 코드 (ex. 000109)
+    private final String prodNm; // 상품명 (ex. 세트메뉴)
+    private final Integer price; // 상품 가격 (ex. 15000)
+    private final String optionClassCd; // 상품 옵션 분류 코드 (ex. 01)
+    private final String sideClassCds; // 사이드 상품 분류 코드 (ex. 000001000001,000001000002)
+    private final String setYn; // 세트 상품 여부 - Y: 세트, N: 단품 (ex. N)
+    private final String taxYn; // 과세 상품 여부 - Y: 과세, N: 비과세 (ex. Y)
+    private final String soldOutYn; // 매진 여부 - Y/N (ex. N)
 
     public Prod(String classCd, String classNm, String prodCd, String prodNm, Integer price, String optionClassCd,
                 String sideClassCds, String setYn, String taxYn, String soldOutYn) {

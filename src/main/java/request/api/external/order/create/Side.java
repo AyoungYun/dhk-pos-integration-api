@@ -8,12 +8,12 @@ package request.api.external.order.create;
 
 public class Side {
 
-    private String prodCd; // 추가 상품 코드 (ex. 000002)
-    private String prodNm; // 추가 상품명 (ex. 곱배기)
-    private Integer qty; // 추가 상품 수량 (ex. 1)
-    private Integer price; // 추가 상품 가격 (ex. 500)
-    private String discountType; // 할인 유형 - amount, percent (ex. amount)
-    private Integer discount; // 할인 금액 (ex. 500)
+    private final String prodCd; // 추가 상품 코드 (ex. 000002)
+    private final String prodNm; // 추가 상품명 (ex. 곱배기)
+    private final Integer qty; // 추가 상품 수량 (ex. 1)
+    private final Integer price; // 추가 상품 가격 (ex. 500)
+    private final String discountType; // 할인 유형 - amount, percent (ex. amount)
+    private final Integer discount; // 할인 금액 (ex. 500)
 
     public Side(String prodCd, String prodNm, Integer qty, Integer price, String discountType, Integer discount) {
         this.prodCd = prodCd;

@@ -13,8 +13,8 @@ package response.api.callback;
 
 public class OrderStateNotify {
 
-    private String resultCode; // 성공 결과 코드 (ex. 000)
-    private String resultMsg; // 결과 메세지 (ex. success)
+    private final String resultCode; // 성공 결과 코드 (ex. 000)
+    private final String resultMsg; // 결과 메세지 (ex. success)
 
     public OrderStateNotify(String resultCode, String resultMsg) {
         this.resultCode = resultCode;

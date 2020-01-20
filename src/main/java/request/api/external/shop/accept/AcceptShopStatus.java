@@ -13,8 +13,8 @@ package request.api.external.shop.accept;
 
 public class AcceptShopStatus {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
-    private String dumAutoAcceptYn; // Y: 자동 접수, N: 수동 접수, S: 접수 상태 확인 (ex. Y)
+    private final String shopCd; // 매장 코드 (ex. DT0017)
+    private final String dumAutoAcceptYn; // Y: 자동 접수, N: 수동 접수, S: 접수 상태 확인 (ex. Y)
 
     public AcceptShopStatus(String shopCd, String dumAutoAcceptYn) {
         this.shopCd = shopCd;

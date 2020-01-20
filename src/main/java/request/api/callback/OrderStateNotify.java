@@ -13,12 +13,12 @@ package request.api.callback;
 
 public class OrderStateNotify {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
-    private String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
-    private String stepCd; // 스탭 코드 (ex. 100)
-    private String orderState; // 주문 상태 (ex. accepted)
-    private String notiMsg; // 고객에게 보여 줄 메세지 (ex. 접수가 되었습니다. 배송 예상 시간은 17시 50분 입니다.)
-    private String deliveryTime; // 배송 예상 시간 - 접수 시간부터 기본 50분 (ex. 17:50)
+    private final String shopCd; // 매장 코드 (ex. DT0017)
+    private final String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
+    private final String stepCd; // 스탭 코드 (ex. 100)
+    private final String orderState; // 주문 상태 (ex. accepted)
+    private final String notiMsg; // 고객에게 보여 줄 메세지 (ex. 접수가 되었습니다. 배송 예상 시간은 17시 50분 입니다.)
+    private final String deliveryTime; // 배송 예상 시간 - 접수 시간부터 기본 50분 (ex. 17:50)
 
     public OrderStateNotify(String shopCd, String mobileOrderNo, String stepCd, String orderState, String notiMsg,
                             String deliveryTime) {

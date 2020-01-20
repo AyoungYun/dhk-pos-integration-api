@@ -18,31 +18,31 @@ import java.util.List;
 
 public class CreateOrder {
 
-    private String shopCd; // 매장 코드 (ex. DT0017)
-    private String orderTime; // 주문 일시 - YYYYMMDDHH24MISS (ex. 20171205134850)
-    private String mobileOrderTypeCd; // D: 배달 주문, P: 픽업 주문, R: 예약 주문 (ex. D)
-    private String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
-    private Integer deliveryFee; // 배송비 (ex. 500)
-    private Integer totalAmount; // 총 주문금액 (ex. 13500)
-    private Integer actualAmount; // 실 주문금액 - 할인 및 배송비 등은 차감 (ex. 11500)
-    private Integer totalDiscount; // 총 할인금액 (ex. 1500)
-    private String prepaidYn; // 선불: Y, 후불: N (ex. Y)
-    private Pay pays; // 결제 정보
-    private List<Prod> prods; // 상품 정보
+    private final String shopCd; // 매장 코드 (ex. DT0017)
+    private final String orderTime; // 주문 일시 - YYYYMMDDHH24MISS (ex. 20171205134850)
+    private final String mobileOrderTypeCd; // D: 배달 주문, P: 픽업 주문, R: 예약 주문 (ex. D)
+    private final String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
+    private final Integer deliveryFee; // 배송비 (ex. 500)
+    private final Integer totalAmount; // 총 주문금액 (ex. 13500)
+    private final Integer actualAmount; // 실 주문금액 - 할인 및 배송비 등은 차감 (ex. 11500)
+    private final Integer totalDiscount; // 총 할인금액 (ex. 1500)
+    private final String prepaidYn; // 선불: Y, 후불: N (ex. Y)
+    private final Pay pays; // 결제 정보
+    private final List<Prod> prods; // 상품 정보
     /* 공통 */
-    private String customerName; // 고객명 - 한글 3글자 입력 제한 (ex. 고객명)
-    private String phone; // 연락처 (ex. 01099999999)
-    private String message; // 사용자 메세지 (ex. 1층에서 연락주세요)
-    private String visitTime; // 방문(픽업) 예약 시간 - YYYYMMDDHH24MISS (ex. 20171205134850)
+    private final String customerName; // 고객명 - 한글 3글자 입력 제한 (ex. 고객명)
+    private final String phone; // 연락처 (ex. 01099999999)
+    private final String message; // 사용자 메세지 (ex. 1층에서 연락주세요)
+    private final String visitTime; // 방문(픽업) 예약 시간 - YYYYMMDDHH24MISS (ex. 20171205134850)
     /* 배달 주문 추가 정보 */
-    private String landAddr; // 지번 주소 (ex. 서울특별시 금천구 가산동 60-25 에이스하이엔드타워6차)
-    private String landAddrDetail; // 지번 상세 주소 (ex. 604호)
-    private String loadAddr; // 도로명 주소 (ex. 서울특별시 금천구 벚꽃로 234(가산동))
-    private String loadAddrDetail; // 도로명 상세 주소 (ex. 604호)
+    private final String landAddr; // 지번 주소 (ex. 서울특별시 금천구 가산동 60-25 에이스하이엔드타워6차)
+    private final String landAddrDetail; // 지번 상세 주소 (ex. 604호)
+    private final String loadAddr; // 도로명 주소 (ex. 서울특별시 금천구 벚꽃로 234(가산동))
+    private final String loadAddrDetail; // 도로명 상세 주소 (ex. 604호)
     /* 픽업 주문 추가 정보 */
-    private String pickupMinute; // 픽업 예상 시간(분) (ex. 30)
+    private final String pickupMinute; // 픽업 예상 시간(분) (ex. 30)
     /* 예약 주문 추가 정보 */
-    private String visitCustomerCount; // 방문 고객 수 (ex. 5)
+    private final String visitCustomerCount; // 방문 고객 수 (ex. 5)
 
     public CreateOrder(String shopCd, String orderTime, String mobileOrderTypeCd, String mobileOrderNo,
                        Integer deliveryFee, Integer totalAmount, Integer actualAmount, Integer totalDiscount,
