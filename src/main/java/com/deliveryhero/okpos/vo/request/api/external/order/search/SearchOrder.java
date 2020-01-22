@@ -1,5 +1,7 @@
 package com.deliveryhero.okpos.vo.request.api.external.order.search;
 
+import com.deliveryhero.okpos.vo.request.api.external.order.action.DataActionOrder;
+
 /**
  * [REQUEST]
  * Title: 주문(결제) 조회
@@ -11,7 +13,7 @@ package com.deliveryhero.okpos.vo.request.api.external.order.search;
  * Descriptions: 주문 내역을 조회합니다.
  */
 
-public class SearchOrder {
+public class SearchOrder extends DataActionOrder {
 
     private final String shopCd; // 매장 코드 (ex. DT0017)
     private final String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
