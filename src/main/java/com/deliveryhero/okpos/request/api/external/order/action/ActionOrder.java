@@ -11,7 +11,7 @@ package com.deliveryhero.okpos.request.api.external.order.action;
  * Descriptions: 매장의 개점 상태를 조회합니다.
  */
 
-public class ActionOrder<T extends DataActionOrder> {
+public class ActionOrder<T extends ActionOrderData> {
 
     private final String action; // 등록(create), 취소(cancel), 조회(search) 처리 지정 (ex. create)
     private final T data;

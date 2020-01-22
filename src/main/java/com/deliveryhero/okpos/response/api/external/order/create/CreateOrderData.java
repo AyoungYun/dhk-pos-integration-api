@@ -1,6 +1,6 @@
 package com.deliveryhero.okpos.response.api.external.order.create;
 
-import com.deliveryhero.okpos.response.api.external.order.action.DataActionOrder;
+import com.deliveryhero.okpos.response.api.external.order.action.ActionOrderData;
 
 /**
  * [RESPONSE]
@@ -16,13 +16,13 @@ import com.deliveryhero.okpos.response.api.external.order.action.DataActionOrder
  *               상품별로 할인금액 설정이 가능합니다.
  */
 
-public class CreateOrder extends DataActionOrder {
+public class CreateOrderData extends ActionOrderData {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
     private final Data data;
 
-    public CreateOrder(String resultCode, String resultMsg, Data data) {
+    public CreateOrderData(String resultCode, String resultMsg, Data data) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.data = data;

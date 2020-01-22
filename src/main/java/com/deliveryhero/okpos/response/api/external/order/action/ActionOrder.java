@@ -11,7 +11,7 @@ package com.deliveryhero.okpos.response.api.external.order.action;
  * Descriptions: 매장의 개점 상태를 조회합니다.
  */
 
-public class ActionOrder<T extends DataActionOrder> {
+public class ActionOrder<T extends ActionOrderData> {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)

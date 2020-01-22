@@ -1,26 +1,25 @@
-package com.deliveryhero.okpos.response.api.external.order.cancels;
+package com.deliveryhero.okpos.response.api.external.order.search;
 
-import com.deliveryhero.okpos.response.api.external.order.action.DataActionOrder;
+import com.deliveryhero.okpos.response.api.external.order.action.ActionOrderData;
 
 /**
  * [RESPONSE]
- * Title: 주문(결제) 취소
+ * Title: 주문(결제) 조회
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
- * URL: /api/external/order/cancels
+ * URL: /api/external/order/search
  * Contents-Type: JSON(application/json)
  * Charset: UTF-8
- * Descriptions: 고객의 주문 취소를 처리합니다.
- *               매장에서 접수한 주문은 취소가 가능하지 않습니다.
+ * Descriptions: 주문 내역을 조회합니다.
  */
 
-public class CancelOrder extends DataActionOrder {
+public class SearchOrderData extends ActionOrderData {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
     private final Data data;
 
-    public CancelOrder(String resultCode, String resultMsg, Data data) {
+    public SearchOrderData(String resultCode, String resultMsg, Data data) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.data = data;

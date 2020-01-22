@@ -10,5 +10,5 @@ package com.deliveryhero.okpos.request.api.external.order.action;
  *  - SearchOrder (주문(결제) 조회)
  */
 
-public class DataActionOrder {
+public class ActionOrderData {
 }
