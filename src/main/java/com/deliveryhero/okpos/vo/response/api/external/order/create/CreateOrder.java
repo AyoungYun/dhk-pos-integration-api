@@ -16,7 +16,7 @@ import com.deliveryhero.okpos.vo.response.api.external.order.action.DataActionOr
  *               상품별로 할인금액 설정이 가능합니다.
  */
 
-public class CreateOrder implements DataActionOrder {
+public class CreateOrder extends DataActionOrder {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)

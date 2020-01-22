@@ -13,7 +13,7 @@ import com.deliveryhero.okpos.vo.response.api.external.order.action.DataActionOr
  * Descriptions: 주문 내역을 조회합니다.
  */
 
-public class SearchOrder implements DataActionOrder {
+public class SearchOrder extends DataActionOrder {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)

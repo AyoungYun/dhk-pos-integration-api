@@ -14,7 +14,7 @@ import com.deliveryhero.okpos.vo.response.api.external.order.action.DataActionOr
  *               매장에서 접수한 주문은 취소가 가능하지 않습니다.
  */
 
-public class CancelOrder implements DataActionOrder {
+public class CancelOrder extends DataActionOrder {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
