@@ -1,5 +1,7 @@
 package com.deliveryhero.okpos.vo.response.api.external.order.cancels;
 
+import com.deliveryhero.okpos.vo.response.api.external.order.action.DataActionOrder;
+
 /**
  * [RESPONSE]
  * Title: 주문(결제) 취소
@@ -12,7 +14,7 @@ package com.deliveryhero.okpos.vo.response.api.external.order.cancels;
  *               매장에서 접수한 주문은 취소가 가능하지 않습니다.
  */
 
-public class CancelOrder {
+public class CancelOrder implements DataActionOrder {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)

@@ -1,5 +1,7 @@
 package com.deliveryhero.okpos.vo.response.api.external.order.create;
 
+import com.deliveryhero.okpos.vo.response.api.external.order.action.DataActionOrder;
+
 /**
  * [RESPONSE]
  * Title: 주문(결제) 등록
@@ -14,7 +16,7 @@ package com.deliveryhero.okpos.vo.response.api.external.order.create;
  *               상품별로 할인금액 설정이 가능합니다.
  */
 
-public class CreateOrder {
+public class CreateOrder implements DataActionOrder {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
