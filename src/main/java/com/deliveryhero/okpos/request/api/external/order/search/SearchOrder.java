@@ -13,12 +13,12 @@ import com.deliveryhero.okpos.request.api.external.order.action.ActionOrderData;
  * Descriptions: 주문 내역을 조회합니다.
  */
 
-public class SearchOrderData extends ActionOrderData {
+public class SearchOrder extends ActionOrderData {
 
     private final String shopCd; // 매장 코드 (ex. DT0017)
     private final String mobileOrderNo; // 모바일 주문 번호 (ex. 99999999999999)
 
-    public SearchOrderData(String shopCd, String mobileOrderNo) {
+    public SearchOrder(String shopCd, String mobileOrderNo) {
         this.shopCd = shopCd;
         this.mobileOrderNo = mobileOrderNo;
     }

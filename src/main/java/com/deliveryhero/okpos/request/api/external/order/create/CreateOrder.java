@@ -18,7 +18,7 @@ import java.util.List;
  *               상품별로 할인금액 설정이 가능합니다.
  */
 
-public class CreateOrderData extends ActionOrderData {
+public class CreateOrder extends ActionOrderData {
 
     private final String shopCd; // 매장 코드 (ex. DT0017)
     private final String orderTime; // 주문 일시 - YYYYMMDDHH24MISS (ex. 20171205134850)
@@ -46,7 +46,7 @@ public class CreateOrderData extends ActionOrderData {
     /* 예약 주문 추가 정보 */
     private final String visitCustomerCount; // 방문 고객 수 (ex. 5)
 
-    public CreateOrderData(CreateOrderBuilder builder) {
+    public CreateOrder(CreateOrderBuilder builder) {
         this.shopCd = builder.shopCd;
         this.orderTime = builder.orderTime;
         this.mobileOrderTypeCd = builder.mobileOrderTypeCd;
@@ -198,8 +198,8 @@ public class CreateOrderData extends ActionOrderData {
             return this;
         }
 
-        public CreateOrderData build() {
-            return new CreateOrderData(this);
+        public CreateOrder build() {
+            return new CreateOrder(this);
         }
     }
 
