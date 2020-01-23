@@ -9,14 +9,14 @@ import java.util.List;
  *  - GetProdInfo (상품 정보 조회 (단품)) {Sheet.14}
  */
 
-public class Data {
+public class GetProdInfoData {
 
     private final String shopCd; // (ex. DT0017)
     private final List<Prod> prods;
     private final List<Option> options;
     private final List<Side> sides;
 
-    public Data(String shopCd, List<Prod> prods, List<Option> options, List<Side> sides) {
+    public GetProdInfoData(String shopCd, List<Prod> prods, List<Option> options, List<Side> sides) {
         this.shopCd = shopCd;
         this.prods = prods;
         this.options = options;

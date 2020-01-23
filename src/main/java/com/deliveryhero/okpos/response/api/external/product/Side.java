@@ -3,8 +3,8 @@ package com.deliveryhero.okpos.response.api.external.product;
 /**
  * [RESPONSE]
  * USE
- *  - GetAllProdInfo - Data (상품 정보 조회 (전체)) {Sheet.13}
- *  - GetProdInfo - Data (상품 정보 조회 (단품)) {Sheet.14}
+ *  - GetAllProdInfo - GetProdInfoData (상품 정보 조회 (전체)) {Sheet.13}
+ *  - GetProdInfo - GetProdInfoData (상품 정보 조회 (단품)) {Sheet.14}
  */
 
 public class Side {
