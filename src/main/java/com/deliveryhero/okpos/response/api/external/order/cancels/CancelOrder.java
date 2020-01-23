@@ -18,9 +18,9 @@ public class CancelOrder extends ActionOrderData {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
-    private final Data data;
+    private final CancelsOrderData data;
 
-    public CancelOrder(String resultCode, String resultMsg, Data data) {
+    public CancelOrder(String resultCode, String resultMsg, CancelsOrderData data) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.data = data;
@@ -34,7 +34,7 @@ public class CancelOrder extends ActionOrderData {
         return resultMsg;
     }
 
-    public Data getData() {
+    public CancelsOrderData getData() {
         return data;
     }
 }

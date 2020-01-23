@@ -15,9 +15,9 @@ public class AcceptShopStatus {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
-    private final Data data;
+    private final AcceptShopStatusData data;
 
-    public AcceptShopStatus(String resultCode, String resultMsg, Data data) {
+    public AcceptShopStatus(String resultCode, String resultMsg, AcceptShopStatusData data) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.data = data;
@@ -31,7 +31,7 @@ public class AcceptShopStatus {
         return resultMsg;
     }
 
-    public Data getData() {
+    public AcceptShopStatusData getData() {
         return data;
     }
 }

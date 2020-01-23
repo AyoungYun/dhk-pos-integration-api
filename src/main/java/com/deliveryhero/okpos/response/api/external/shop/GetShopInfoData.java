@@ -6,7 +6,7 @@ package com.deliveryhero.okpos.response.api.external.shop;
  *  - GetShopInfo (매장 정보 조회) {Sheet.11}
  */
 
-public class Data {
+public class GetShopInfoData {
 
     private final String shopCd; // 매장 코드 (ex. DT0017)
     private final String shopNm; // 매장 이름 (ex. JS컴퍼니)
@@ -24,7 +24,7 @@ public class Data {
     private final String addrDtl; // 상세 주소 (ex. 604호)
     private final String useYn; // 매장 상태 구분 (ex. Y)
 
-    public Data(DataBuilder builder) {
+    public GetShopInfoData(GetShopInfoDataBuilder builder) {
         this.shopCd = builder.shopCd;
         this.shopNm = builder.shopNm;
         this.ownerNm = builder.ownerNm;
@@ -42,7 +42,7 @@ public class Data {
         this.useYn = builder.useYn;
     }
 
-    public static final class DataBuilder {
+    public static final class GetShopInfoDataBuilder {
         private String shopCd;
         private String shopNm;
         private String ownerNm;
@@ -59,83 +59,83 @@ public class Data {
         private String addrDtl;
         private String useYn;
 
-        public DataBuilder withShopCd(String shopCd) {
+        public GetShopInfoDataBuilder withShopCd(String shopCd) {
             this.shopCd = shopCd;
             return this;
         }
 
-        public DataBuilder withShopNm(String shopNm) {
+        public GetShopInfoDataBuilder withShopNm(String shopNm) {
             this.shopNm = shopNm;
             return this;
         }
 
-        public DataBuilder withOwnerNm(String ownerNm) {
+        public GetShopInfoDataBuilder withOwnerNm(String ownerNm) {
             this.ownerNm = ownerNm;
             return this;
         }
 
-        public DataBuilder withBizNo(String bizNo) {
+        public GetShopInfoDataBuilder withBizNo(String bizNo) {
             this.bizNo = bizNo;
             return this;
         }
 
-        public DataBuilder withBizTypeNm(String bizTypeNm) {
+        public GetShopInfoDataBuilder withBizTypeNm(String bizTypeNm) {
             this.bizTypeNm = bizTypeNm;
             return this;
         }
 
-        public DataBuilder withBizKindNm(String bizKindNm) {
+        public GetShopInfoDataBuilder withBizKindNm(String bizKindNm) {
             this.bizKindNm = bizKindNm;
             return this;
         }
 
-        public DataBuilder withBizShopNm(String bizShopNm) {
+        public GetShopInfoDataBuilder withBizShopNm(String bizShopNm) {
             this.bizShopNm = bizShopNm;
             return this;
         }
 
-        public DataBuilder withTelNo(String telNo) {
+        public GetShopInfoDataBuilder withTelNo(String telNo) {
             this.telNo = telNo;
             return this;
         }
 
-        public DataBuilder withHpNo(String hpNo) {
+        public GetShopInfoDataBuilder withHpNo(String hpNo) {
             this.hpNo = hpNo;
             return this;
         }
 
-        public DataBuilder withFaxNo(String faxNo) {
+        public GetShopInfoDataBuilder withFaxNo(String faxNo) {
             this.faxNo = faxNo;
             return this;
         }
 
-        public DataBuilder withEmailAddr(String emailAddr) {
+        public GetShopInfoDataBuilder withEmailAddr(String emailAddr) {
             this.emailAddr = emailAddr;
             return this;
         }
 
-        public DataBuilder withPostNo(String postNo) {
+        public GetShopInfoDataBuilder withPostNo(String postNo) {
             this.postNo = postNo;
             return this;
         }
 
-        public DataBuilder withAddr(String addr) {
+        public GetShopInfoDataBuilder withAddr(String addr) {
             this.addr = addr;
             return this;
         }
 
-        public DataBuilder withAddrDtl(String addrDtl) {
+        public GetShopInfoDataBuilder withAddrDtl(String addrDtl) {
             this.addrDtl = addrDtl;
             return this;
         }
 
-        public DataBuilder withUseYn(String useYn) {
+        public GetShopInfoDataBuilder withUseYn(String useYn) {
             this.useYn = useYn;
             return this;
         }
 
-        public Data build() {
-            return new Data(this);
+        public GetShopInfoData build() {
+            return new GetShopInfoData(this);
         }
     }
 
