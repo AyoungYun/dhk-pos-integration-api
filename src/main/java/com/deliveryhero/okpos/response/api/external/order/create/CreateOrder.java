@@ -20,9 +20,9 @@ public class CreateOrder extends ActionOrderData {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
-    private final Data data;
+    private final CreateOrderData data;
 
-    public CreateOrder(String resultCode, String resultMsg, Data data) {
+    public CreateOrder(String resultCode, String resultMsg, CreateOrderData data) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.data = data;
@@ -36,7 +36,7 @@ public class CreateOrder extends ActionOrderData {
         return resultMsg;
     }
 
-    public Data getData() {
+    public CreateOrderData getData() {
         return data;
     }
 }

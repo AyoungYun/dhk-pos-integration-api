@@ -6,7 +6,7 @@ package com.deliveryhero.okpos.response.api.external.order.cancels;
  *  - CancelOrder (주문(결제) 취소) {Sheet.17}
  */
 
-public class Data {
+public class CancelsOrderData {
 
     private final String shopCd; // 매장 코드 (ex. DT0017)
     private final String mobileOrderFg; // 모바일 주문 구분 - 03: 덤, 04: 요기요, 05: 더 페이 (ex. 05)
@@ -17,8 +17,8 @@ public class Data {
     // 500: 배송 요청, 550: 배송중, 700: 완료, 900: 취소 (ex. 900)
     private final String stepNm; // 스탭명 (ex. 취소)
 
-    public Data(String shopCd, String mobileOrderFg, String mobileOrderNo, String mobileRegNo, String stepCd,
-                String stepNm) {
+    public CancelsOrderData(String shopCd, String mobileOrderFg, String mobileOrderNo, String mobileRegNo, String stepCd,
+                            String stepNm) {
         this.shopCd = shopCd;
         this.mobileOrderFg = mobileOrderFg;
         this.mobileOrderNo = mobileOrderNo;

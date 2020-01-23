@@ -17,9 +17,9 @@ public class SearchOrder extends ActionOrderData {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
-    private final Data data;
+    private final SearchOrderData data;
 
-    public SearchOrder(String resultCode, String resultMsg, Data data) {
+    public SearchOrder(String resultCode, String resultMsg, SearchOrderData data) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.data = data;
@@ -33,7 +33,7 @@ public class SearchOrder extends ActionOrderData {
         return resultMsg;
     }
 
-    public Data getData() {
+    public SearchOrderData getData() {
         return data;
     }
 }
