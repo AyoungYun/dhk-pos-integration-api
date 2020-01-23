@@ -17,9 +17,9 @@ public class SuccessCheckOrderProd {
 
     private final String resultCode; // 성공 결과 코드 (ex. 000)
     private final String resultMsg; // 결과 메세지 (ex. success)
-    private final Data data; // (ex. null)
+    private final CheckOrderProdData data; // (ex. null)
 
-    public SuccessCheckOrderProd(String resultCode, String resultMsg, Data data) {
+    public SuccessCheckOrderProd(String resultCode, String resultMsg, CheckOrderProdData data) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;
         this.data = data;
@@ -33,7 +33,7 @@ public class SuccessCheckOrderProd {
         return resultMsg;
     }
 
-    public Data getData() {
+    public CheckOrderProdData getData() {
         return data;
     }
 }
