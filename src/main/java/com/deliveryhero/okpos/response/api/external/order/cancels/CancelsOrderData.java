@@ -17,8 +17,8 @@ public class CancelsOrderData {
     // 500: 배송 요청, 550: 배송중, 700: 완료, 900: 취소 (ex. 900)
     private final String stepNm; // 스탭명 (ex. 취소)
 
-    public CancelsOrderData(String shopCd, String mobileOrderFg, String mobileOrderNo, String mobileRegNo, String stepCd,
-                            String stepNm) {
+    public CancelsOrderData(String shopCd, String mobileOrderFg, String mobileOrderNo, String mobileRegNo,
+                            String stepCd, String stepNm) {
         this.shopCd = shopCd;
         this.mobileOrderFg = mobileOrderFg;
         this.mobileOrderNo = mobileOrderNo;

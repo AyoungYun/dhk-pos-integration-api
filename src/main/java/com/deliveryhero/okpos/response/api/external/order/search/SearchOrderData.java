@@ -18,8 +18,8 @@ public class SearchOrderData {
     // 500: 배송 요청, 550: 배송중, 700: 완료, 900: 취소 (ex. 000)
     private final String stepNm; // 스탭명 (ex. 접수 대기)
 
-    public SearchOrderData(String shopCd, String mobileOrderFg, String mobileOrderNo, String mobileRegNo, String saleDate,
-                           String stepCd, String stepNm) {
+    public SearchOrderData(String shopCd, String mobileOrderFg, String mobileOrderNo, String mobileRegNo,
+                           String saleDate, String stepCd, String stepNm) {
         this.shopCd = shopCd;
         this.mobileOrderFg = mobileOrderFg;
         this.mobileOrderNo = mobileOrderNo;
