@@ -3,7 +3,7 @@ package com.deliveryhero.okpos.request.api.external.order.check;
 /**
  * [REQUEST]
  * USE
- *  - CheckOrderProd - Prod (주문 상품 확인)
+ *  - CheckOrderProd - Prod (주문 상품 확인) {Sheet.22}
  */
 
 public class Option {

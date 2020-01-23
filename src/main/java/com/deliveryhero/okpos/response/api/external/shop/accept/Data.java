@@ -3,7 +3,7 @@ package com.deliveryhero.okpos.response.api.external.shop.accept;
 /**
  * [RESPONSE]
  * USE
- *  - AcceptShopStatus (자동/수동 접수 조회 및 변경)
+ *  - AcceptShopStatus (자동/수동 접수 조회 및 변경) {Sheet.21}
  */
 
 public class Data {

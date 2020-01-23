@@ -3,7 +3,7 @@ package com.deliveryhero.okpos.request.api.external.order.create;
 /**
  * [REQUEST]
  * USE
- *  - CreateOrder - Prod (주문(결제) 등록)
+ *  - CreateOrder - Prod (주문(결제) 등록) {Sheet.16}
  */
 
 public class Side {

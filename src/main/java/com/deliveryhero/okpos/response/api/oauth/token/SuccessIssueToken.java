@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.response.api.oauth.token;
 
 /**
  * [SUCCESS RESPONSE]
- * Title: TOKEN 발급 (제휴사)
+ * Title: TOKEN 발급 (제휴사) {Sheet.10}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
  * URL: /api/oauth/token

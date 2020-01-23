@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.response.api.external.order.check;
 
 /**
  * [SUCCESS RESPONSE]
- * Title: 주문 상품 확인
+ * Title: 주문 상품 확인 {Sheet.22}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
  * URL: /api/external/order/check

@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * [REQUEST]
- * Title: 주문(결제) 등록
+ * Title: 주문(결제) 등록 {Sheet.16}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
  * URL: /api/external/order/create

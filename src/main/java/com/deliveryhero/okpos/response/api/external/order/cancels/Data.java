@@ -3,7 +3,7 @@ package com.deliveryhero.okpos.response.api.external.order.cancels;
 /**
  * [RESPONSE]
  * USE
- *  - CancelOrder (주문(결제) 취소)
+ *  - CancelOrder (주문(결제) 취소) {Sheet.17}
  */
 
 public class Data {

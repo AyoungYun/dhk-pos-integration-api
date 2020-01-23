@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * [REQUEST]
  * USE
- *  - CreateOrder (주문(결제) 등록)
+ *  - CreateOrder (주문(결제) 등록) {Sheet.16}
  */
 
 public class Prod {

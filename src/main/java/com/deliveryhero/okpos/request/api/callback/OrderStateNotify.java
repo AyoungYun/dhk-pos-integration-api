@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.request.api.callback;
 
 /**
  * [REQUEST]
- * Title: 주문 상태 Notify
+ * Title: 주문 상태 Notify {Sheet.20}
  * Direction: OKPOS(DumAPI) -> 제휴사
  * Method: POST
  * URL: 예) https://www.partner.co.kr/api/callback

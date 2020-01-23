@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.request.api.external.shop.open;
 
 /**
  * [REQUEST]
- * Title: 매장 개점 조회
+ * Title: 매장 개점 조회 {Sheet.12}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: GET
  * URL: /api/external/shop/open/{shopCd}

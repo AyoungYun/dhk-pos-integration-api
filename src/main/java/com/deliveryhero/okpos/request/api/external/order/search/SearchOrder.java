@@ -4,7 +4,7 @@ import com.deliveryhero.okpos.request.api.external.order.action.ActionOrderData;
 
 /**
  * [REQUEST]
- * Title: 주문(결제) 조회
+ * Title: 주문(결제) 조회 {Sheet.18}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
  * URL: /api/external/order/search

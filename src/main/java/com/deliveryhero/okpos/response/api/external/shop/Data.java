@@ -3,7 +3,7 @@ package com.deliveryhero.okpos.response.api.external.shop;
 /**
  * [RESPONSE]
  * USE
- *  - GetShopInfo (매장 정보 조회)
+ *  - GetShopInfo (매장 정보 조회) {Sheet.11}
  */
 
 public class Data {

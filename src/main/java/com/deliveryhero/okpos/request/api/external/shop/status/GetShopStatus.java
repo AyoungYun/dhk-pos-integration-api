@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.request.api.external.shop.status;
 
 /**
  * [REQUEST]
- * Title: 매장 상태 조회
+ * Title: 매장 상태 조회 {Sheet.19}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: GET
  * URL: /api/external/shop/status/{shopCd}

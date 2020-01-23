@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * [REQUEST]
  * USE
- *  - CheckOrderProd (주문 상품 확인)
+ *  - CheckOrderProd (주문 상품 확인) {Sheet.22}
  */
 
 public class Prod {

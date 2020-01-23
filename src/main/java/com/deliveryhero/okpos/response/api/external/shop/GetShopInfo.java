@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.response.api.external.shop;
 
 /**
  * [RESPONSE]
- * Title: 매장 정보 조회
+ * Title: 매장 정보 조회 {Sheet.11}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: GET
  * URL: /api/external/shop/{shopCd}

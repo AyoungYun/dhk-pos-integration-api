@@ -3,8 +3,8 @@ package com.deliveryhero.okpos.response.api.external.order.check;
 /**
  * [RESPONSE]
  * USE
- *  - SuccessCheckOrderProd (주문 상품 확인)
- *  - FailCheckOrderProd (주문 상품 확인)
+ *  - SuccessCheckOrderProd (주문 상품 확인) {Sheet.22}
+ *  - FailCheckOrderProd (주문 상품 확인) {Sheet.22}
  */
 
 public class Data {

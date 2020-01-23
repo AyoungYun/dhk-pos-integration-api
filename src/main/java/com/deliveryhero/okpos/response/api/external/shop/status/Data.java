@@ -3,7 +3,7 @@ package com.deliveryhero.okpos.response.api.external.shop.status;
 /**
  * [RESPONSE]
  * USE
- *  - GetShopStatus (매장 상태 조회)
+ *  - GetShopStatus (매장 상태 조회) {Sheet.19}
  */
 
 public class Data {

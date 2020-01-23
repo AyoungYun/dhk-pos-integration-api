@@ -3,7 +3,7 @@ package com.deliveryhero.okpos.response.api.external.order.search;
 /**
  * [RESPONSE]
  * USE
- *  - SearchOrder (주문(결제) 조회)
+ *  - SearchOrder (주문(결제) 조회) {Sheet.18}
  */
 
 public class Data {

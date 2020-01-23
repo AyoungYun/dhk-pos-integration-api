@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.request.api.external.order.action;
 
 /**
  * [REQUEST]
- * Title: 주문 등록/취소/조회 처리
+ * Title: 주문 등록/취소/조회 처리 {Sheet.15}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
  * URL: /api/external/order/action

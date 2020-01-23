@@ -5,8 +5,8 @@ import java.util.List;
 /**
  * [RESPONSE]
  * USE
- *  - GetAllProdInfo (상품 정보 조회 (전체))
- *  - GetProdInfo (상품 정보 조회 (단품))
+ *  - GetAllProdInfo (상품 정보 조회 (전체)) {Sheet.13}
+ *  - GetProdInfo (상품 정보 조회 (단품)) {Sheet.14}
  */
 
 public class Data {

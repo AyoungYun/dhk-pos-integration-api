@@ -4,7 +4,7 @@ import com.deliveryhero.okpos.response.api.external.order.action.ActionOrderData
 
 /**
  * [RESPONSE]
- * Title: 주문(결제) 취소
+ * Title: 주문(결제) 취소 {Sheet.17}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
  * URL: /api/external/order/cancels

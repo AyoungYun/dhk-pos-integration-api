@@ -2,7 +2,7 @@ package com.deliveryhero.okpos.response.api.external.shop.accept;
 
 /**
  * [RESPONSE]
- * Title: 자동/수동 접수 조회 및 변경
+ * Title: 자동/수동 접수 조회 및 변경 {Sheet.21}
  * Direction: 제휴사 -> OKPOS(DumAPI)
  * Method: POST
  * URL: /api/external/shop/accept
