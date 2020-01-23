@@ -6,12 +6,12 @@ package com.deliveryhero.okpos.response.api.external.shop.accept;
  *  - AcceptShopStatus (자동/수동 접수 조회 및 변경) {Sheet.21}
  */
 
-public class Data {
+public class AcceptShopStatusData {
 
     private final String shopCd; // 매장 코드 (ex. DT0017)
     private final String dumAutoAcceptYn; // Y: 자동 접수, N: 수동 접수 (ex. Y)
 
-    public Data(String shopCd, String dumAutoAcceptYn) {
+    public AcceptShopStatusData(String shopCd, String dumAutoAcceptYn) {
         this.shopCd = shopCd;
         this.dumAutoAcceptYn = dumAutoAcceptYn;
     }
