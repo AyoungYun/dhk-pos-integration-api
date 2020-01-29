@@ -1,5 +1,7 @@
 package com.deliveryhero.okpos.response.api.oauth.token;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * [FAIL RESPONSE]
  * Title: TOKEN 발급 (제휴사) {Sheet.10}
@@ -15,18 +17,19 @@ package com.deliveryhero.okpos.response.api.oauth.token;
 public class FailIssueToken {
 
     private final String error; // (ex. invalid_client)
-    private final String error_description; // (ex. Bad client credentials)
+    @JsonProperty("error_description")
+    private final String errorDescription; // (ex. Bad client credentials)
 
-    public FailIssueToken(String error, String error_description) {
+    public FailIssueToken(String error, String errorDescription) {
         this.error = error;
-        this.error_description = error_description;
+        this.errorDescription = errorDescription;
     }
 
     public String getError() {
         return error;
     }
 
-    public String getError_description() {
-        return error_description;
+    public String getErrorDescription() {
+        return errorDescription;
     }
 }

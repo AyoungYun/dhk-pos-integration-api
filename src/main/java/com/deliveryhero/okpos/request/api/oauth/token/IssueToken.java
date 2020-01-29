@@ -1,5 +1,7 @@
 package com.deliveryhero.okpos.request.api.oauth.token;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * [REQUEST]
  * Title: TOKEN 발급 (제휴사) {Sheet.10}
@@ -14,25 +16,28 @@ package com.deliveryhero.okpos.request.api.oauth.token;
 
 public class IssueToken {
 
-    private final String grant_type; // 인증방식 - 고정값 (client_credentials)
-    private final String client_id; // 제휴사 발급 아이디 (ex. apiclient)
-    private final String client_secret; // 제휴사 발급 비밀번호 (ex. apisecret)
+    @JsonProperty("grant_type")
+    private final String grantType; // 인증방식 - 고정값 (client_credentials)
+    @JsonProperty("client_id")
+    private final String clientID; // 제휴사 발급 아이디 (ex. apiclient)
+    @JsonProperty("client_secret")
+    private final String clientSecret; // 제휴사 발급 비밀번호 (ex. apisecret)
 
-    public IssueToken(String grant_type, String client_id, String client_secret) {
-        this.grant_type = grant_type;
-        this.client_id = client_id;
-        this.client_secret = client_secret;
+    public IssueToken(String grantType, String clientID, String clientSecret) {
+        this.grantType = grantType;
+        this.clientID = clientID;
+        this.clientSecret = clientSecret;
     }
 
-    public String getGrant_type() {
-        return grant_type;
+    public String getGrantType() {
+        return grantType;
     }
 
-    public String getClient_id() {
-        return client_id;
+    public String getClientID() {
+        return clientID;
     }
 
-    public String getClient_secret() {
-        return client_secret;
+    public String getClientSecret() {
+        return clientSecret;
     }
 }
