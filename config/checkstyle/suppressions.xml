@@ -6,7 +6,7 @@
 
 <suppressions>
     <!-- Suppress Spring Boot Application main-->
-    <suppress files="OKPOSApplication.java" checks="HideUtilityClassConstructor" />
+    <suppress files="POSModelApplication.java" checks="HideUtilityClassConstructor" />
 
     <!-- Suppressions for unit testing code -->
     <suppress checks="MagicNumber" files="[\\/]src[\\/]test[\\/]kt[\\/]" />
